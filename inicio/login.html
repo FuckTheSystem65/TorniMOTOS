@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Log-in </title>
+<meta name="viewport" content="width=device-width,inicial-scale=1.0" />
+<link rel="stylesheet" href="css-login/menu.css">
+<!--<link rel="stylesheet" href="slider.css" />-->
+<link rel="stylesheet" href="css-login/responsive-login.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
+</head>
+<body>
+<header>
+
+</header>
+
+<!--<div class="formulario">
+<form action="/action_page.php" method="post">
+	<div class="imgcontainer">
+	  <img src="imagenes/user.png" alt="Avatar" class="avatar">
+	</div>
+  
+	<div class="container">
+	  <input type="text" placeholder="Ingresa tu nombre de usuario" name="uname" required>
+  
+	  <input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+	  <div class="container">
+	  <span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	  <button type="submit">Ingresar</button>
+	  <button type="button" class="cancelbtn">Cancel</button>
+  
+	</div>
+  </form>
+</div>-->
+
+<div class ="formulario">
+	<div class="imgcontainer">
+		<img src="css-login/imagenes-login/user-up.png" alt="Avatar" class="avatar">
+	</div>
+	<form name="frm" method="post" action="correviajes.php">
+		<center><label><b>Inicio de sesión</b></label></center>
+		<div>
+			<input type="text" id="nombre" name="input" placeholder="Escribe tu nombre de usuario" required="required"/>
+		</div>		
+		<input type="password" placeholder="Ingresa tu contraseña" name="psw" required>
+		<div class="container">
+	  		<span class="psw"> <a class="link" href="recuperacion.html">Olvidaste tu contraseña?</a></span>
+		</div>
+	  	<button type="submit"><b>Ingresar</b></button>
+	  	<button type="button" class="cancelbtn" onclick="location.href='index.html'">Cancel</button>
+	</form>
+</div>
+
+
+
+
+<script>
+function myFunction(){
+	var x = document.getElementById("myTopnav");
+	if (x.className == "topnav"){
+		x.className += " RESPONSIVE";
+	} else{
+		x.className = "topnav";
+	}
+}
+</script>
+</body>
+</html>
